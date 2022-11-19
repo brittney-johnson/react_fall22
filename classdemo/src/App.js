@@ -1,5 +1,6 @@
 import Header from "./components/Header";
-import Nav from 'react-bootstrap/Nav'
+import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 
 function App() {
   return (

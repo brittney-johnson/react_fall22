@@ -33,7 +33,7 @@ class Header extends Component{
             </a>
             <div>
               <h3> Your stateful name is: <i>{name}</i></h3>
-                  <input type="text" value={name} on Change={() => this.setState({name: e.target.value})}/>
+                  <input type="text" value={name} on Change={(e) => this.setState({name: e.target.value})}/>
             </div>
             <span>
               You have clicked on the button {this.state.count} times!

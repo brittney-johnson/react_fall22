@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Button from 'react-bootstrap/Button';
+import Spinner from 'react-bootstrap/Spinner';
 //import './sass/App.scss';
 import App from './App';
 
-const LightTheme = React.lazy(() => import('./components/LightTheme'));
-const DarkTheme = React.lazy(() => import('./components/DarkTheme'));
+const LightTheme = React.lazy(() => import('./components/LightTheme.js'));
+const DarkTheme = React.lazy(() => import('./components/DarkTheme.js'));
 
 const ThemeSelector = ({children}) => {
   const theme = localStorage.setItem('theme') ?  localStorage.getItem('theme') : window.matchMedia('prefers-color-scheme: dark').matches ? "dark" : "light"
   localStorage.setItem('theme', theme)
   return(
     <React.Suspense 
-    fallback={<Spinner animation="border" variant="primary/>}
+    fallback={<Spinner animation="border" variant="primary"/>}
     key ={theme}
 >
       {theme === 'dark' && <DarkTheme />}
@@ -33,8 +33,9 @@ const ThemeSelector = ({children}) => {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
-    <App />
+<ThemeSelector> 
+   <App />
+   </ThemeSelector>
 
   </React.StrictMode>
 );

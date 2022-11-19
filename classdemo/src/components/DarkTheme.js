@@ -1,5 +1,5 @@
 import React from "react";
-import '../sass.Dark.scss'
+import '../sass/Dark.scss';
 
 const Theme = () => <></>
 
