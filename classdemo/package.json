@@ -14,8 +14,7 @@
     "react-scripts": "5.0.1",
     "sass": "^1.55.0",
     "semver": "^7.3.8",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://brittney-johnson-resume.onrender.com"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,6 +22,7 @@
     "test": "react-scripts test --watchAll=false --coverage",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://brittney-johnson-resume.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",
