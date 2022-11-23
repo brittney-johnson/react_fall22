@@ -1,6 +1,14 @@
 $background-color: #282c34;
-$white-color: white;
-$link-color: #61dafb;
+$white-color: rgb(255, 255, 255);
+$link-color: #ff0099;
 $var-name: #f78676;
+
+h2 {
+    color: #ff0099 ;
+  }
+
+  h1 {
+    color: #ff0099 ;
+  }
 
 @import 'App'
